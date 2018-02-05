@@ -1,0 +1,12 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: CookAngels
+    database_user: root
+    database_password: null
+    mailer_transport: gmail
+    mailer_host: ~
+    mailer_user: tatayo902@gmail.com
+    mailer_password: wyhdecxfr7r
+    secret: 3f5e0d3bb42388048a4f4df39b7041af5570b262

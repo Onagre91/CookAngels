@@ -1,0 +1,66 @@
+<?php
+
+namespace AppBundle\Entity\Form;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Formulaire
+ *
+ * @ORM\Table(name="formulaire")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\Form\FormulaireRepository")
+ */
+class Formulaire
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="first_name", type="string", length=255)
+     */
+    private $firstName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="last_name", type="string", length=255)
+     */
+    private $lastName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=255, unique=true)
+     */
+    private $email;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="city", type="string", length=255)
+     */
+    private $city;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="fav_city", type="string", length=255)
+     */
+    private $favCity;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="age", type="integer", nullable=true)
+     */
+    private $age;
+}
+
