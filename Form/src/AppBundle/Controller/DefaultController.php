@@ -27,9 +27,9 @@ class DefaultController extends Controller
         ->add('city', TextType::class,array('label' => 'Ville de Résidence'))
         ->add('age', ChoiceType::class, array('label' => 'Âge', 
             'choices' => array(
-                '-20 ans' => '-20',
-                '21-35 ans' => '21-35',
-                '+35 ans' => '+35',
+                'Moins de 20 ans' => '-20',
+                'Entre 21 et 35 ans' => '21-35',
+                'Plus de 35 ans' => '+35',
                 ),
             ))
         ->add('favcity', ChoiceType::class, array('label' => 'Pays de votre choix', 
